@@ -1,10 +1,9 @@
-const removeFromArray = function(items, value) {
-    if (items.includes(value)) {
-        function getValue(item) {
-            return item !== value;
-        } 
-        const newArray = items.filter(getValue);
-        return newArray;
+const removeFromArray = function(items, ...values) {
+    if (items.includes(...values)) {
+        const newArray = items.filter(getValue => !values.includes(getValue));
+        return newArray; 
+    } else {
+        return items;
     }
 };
 
