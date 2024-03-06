@@ -8,8 +8,11 @@ const repeatString = function(string, num) {
             string2 += string;
         }
         return string2;
-    } else {
+    } else if (num === 0){
         let string2 = "";
+        return string2;
+    } else {
+        let string2 = "ERROR";
         return string2;
     }
 };
