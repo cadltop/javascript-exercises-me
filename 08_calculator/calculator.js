@@ -1,11 +1,9 @@
 const add = function(num1, num2) {
-	let total = num1 + num2;
-  return total;
+  return num1 + num2;
 };
 
 const subtract = function(num1, num2) {
-	let total = num1 - num2;
-  return total;
+	return num1 - num2;
 };
 
 const sum = function() {
