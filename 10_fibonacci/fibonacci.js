@@ -1,8 +1,11 @@
 const fibonacci = function(member) {
     let seq = [1];
 
-    if (member === 0) {
-        return 0;
+
+    if (member === 0){
+        return member;
+    } else if (member < 0){
+        return "OOPS";
     } else {
         for (let i = 1; i <=26; i++) {
             if (seq[i-2] === undefined){
