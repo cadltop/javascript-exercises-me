@@ -2,9 +2,9 @@ const fibonacci = function(member) {
     let seq = [1];
 
 
-    if (member === 0){
-        return member;
-    } else if (member < 0){
+    if (parseInt(member) === 0){
+        return parseInt(member);
+    } else if (parseInt(member) < 0){
         return "OOPS";
     } else {
         for (let i = 1; i <=26; i++) {
@@ -15,7 +15,7 @@ const fibonacci = function(member) {
             }
         }
     
-        return seq[member-1];
+        return seq[parseInt(member)-1];
     }
 };
 
