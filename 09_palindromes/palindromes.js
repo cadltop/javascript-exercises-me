@@ -1,7 +1,8 @@
 const palindromes = function (word) {
-    let chars = word.split('');
+    let cleanWord = word.replace(/\W/g,'');
+    let chars = cleanWord.split('');
     let newWord = chars.reverse().join('');
-    if (word === newWord) {
+    if (cleanWord === newWord) {
         return true;
     } else {return false;}
 };
